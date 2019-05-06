@@ -15,7 +15,10 @@ public class WordDao {
     }
 
     public RealmResults<Word> getAllWords() {
-       return realm.where(Word.class).findAll();
+       return realm.where(Word.class).findAll().sort("viet");
+    }
+    public RealmResults<Word> getLaoViet() {
+        return realm.where(Word.class).findAll().sort("lao");
     }
     public RealmResults<Word> searchWord (String key, String keyWord) {
         return realm.where(Word.class).like(key, "*" + keyWord + "*").findAll();
