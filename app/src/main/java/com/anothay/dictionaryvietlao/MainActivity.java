@@ -1,6 +1,7 @@
 package com.anothay.dictionaryvietlao;
 import android.content.Intent;
 import android.support.annotation.Nullable;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -14,6 +15,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.anothay.dictionaryvietlao.adapter.AdapterRecycle;
 import com.anothay.dictionaryvietlao.model.Word;
@@ -46,8 +48,15 @@ public class MainActivity extends AppCompatActivity {
         initWordList();
         initSearchView();
         initButtonFavorite();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_help_outline_white_24dp);
     }
-
+    @Override
+    public boolean onSupportNavigateUp() {
+        Intent intent =  new Intent(this, AboutActivity.class);
+        startActivity(intent);
+        return super.onSupportNavigateUp();
+    }
     private void initButtonFavorite() {
         imgFavorite.setOnClickListener(new View.OnClickListener() {
             @Override
