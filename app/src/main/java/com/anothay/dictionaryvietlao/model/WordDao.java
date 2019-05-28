@@ -22,6 +22,10 @@ public class WordDao {
         return realm.where(Word.class).findAll().sort("lao");
     }
     public RealmResults<Word> searchWord (String key, String keyWord) {
+//        if (realm.where(Word.class).equalTo())
+        if (realm.where(Word.class).like(key,keyWord).findAll().size() > 0) {
+            return realm.where(Word.class).like(key,keyWord).findAll();
+        }
         return realm.where(Word.class).like(key, "*" + keyWord + "*").findAll();
     }
     public Word findWord (String key, String keyWord) {
