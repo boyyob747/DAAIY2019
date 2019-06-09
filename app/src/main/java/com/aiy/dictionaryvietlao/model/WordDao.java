@@ -1,8 +1,6 @@
-package com.anothay.dictionaryvietlao.model;
+package com.aiy.dictionaryvietlao.model;
 
-import io.realm.Case;
 import io.realm.Realm;
-import io.realm.RealmConfiguration;
 import io.realm.RealmResults;
 
 public class WordDao {
@@ -25,6 +23,8 @@ public class WordDao {
 //        if (realm.where(Word.class).equalTo())
         if (realm.where(Word.class).like(key,keyWord).findAll().size() > 0) {
             return realm.where(Word.class).like(key,keyWord).findAll();
+        } else if (realm.where(Word.class).like(key, keyWord + "*").findAll().size() > 0) {
+            return realm.where(Word.class).like(key, keyWord + "*").findAll();
         }
         return realm.where(Word.class).like(key, "*" + keyWord + "*").findAll();
     }

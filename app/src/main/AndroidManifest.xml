@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.anothay.dictionaryvietlao">
+    package="com.aiy.dictionaryvietlao">
 
     <application
-        android:name=".MyApplication"
+        android:name="com.aiy.dictionaryvietlao.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AboutActivity"></activity>
-        <activity android:name=".FavoriteActivity" />
-        <activity android:name=".DetailActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name="com.aiy.dictionaryvietlao.AboutActivity"></activity>
+        <activity android:name="com.aiy.dictionaryvietlao.FavoriteActivity" />
+        <activity android:name="com.aiy.dictionaryvietlao.DetailActivity" />
+        <activity android:name="com.aiy.dictionaryvietlao.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

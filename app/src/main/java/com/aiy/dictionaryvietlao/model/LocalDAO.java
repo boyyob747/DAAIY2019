@@ -1,7 +1,6 @@
-package com.anothay.dictionaryvietlao.model;
+package com.aiy.dictionaryvietlao.model;
 
 import android.content.Context;
-import android.content.SharedPreferences;
 
 import io.realm.Realm;
 import io.realm.RealmConfiguration;

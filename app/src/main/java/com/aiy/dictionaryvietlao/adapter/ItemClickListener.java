@@ -1,4 +1,4 @@
-package com.anothay.dictionaryvietlao.adapter;
+package com.aiy.dictionaryvietlao.adapter;
 
 import android.view.View;
 

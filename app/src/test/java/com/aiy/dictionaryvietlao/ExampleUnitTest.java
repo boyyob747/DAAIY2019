@@ -1,4 +1,4 @@
-package com.anothay.dictionaryvietlao;
+package com.aiy.dictionaryvietlao;
 
 import org.junit.Test;
 

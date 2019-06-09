@@ -1,4 +1,4 @@
-package com.anothay.dictionaryvietlao;
+package com.aiy.dictionaryvietlao;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

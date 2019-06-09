@@ -1,25 +1,20 @@
-package com.anothay.dictionaryvietlao.adapter;
+package com.aiy.dictionaryvietlao.adapter;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.anothay.dictionaryvietlao.DetailActivity;
-import com.anothay.dictionaryvietlao.R;
-import com.anothay.dictionaryvietlao.model.LocalDAO;
-import com.anothay.dictionaryvietlao.model.Word;
+import com.aiy.dictionaryvietlao.DetailActivity;
+import com.aiy.dictionaryvietlao.R;
+import com.aiy.dictionaryvietlao.model.LocalDAO;
+import com.aiy.dictionaryvietlao.model.Word;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
 import io.realm.RealmResults;
 
 public class AdapterRecycle extends RecyclerView.Adapter<AdapterRecycle.WordHolder>  {

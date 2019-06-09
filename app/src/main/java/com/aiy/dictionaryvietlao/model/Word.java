@@ -1,4 +1,4 @@
-package com.anothay.dictionaryvietlao.model;
+package com.aiy.dictionaryvietlao.model;
 
 import io.realm.RealmObject;
 

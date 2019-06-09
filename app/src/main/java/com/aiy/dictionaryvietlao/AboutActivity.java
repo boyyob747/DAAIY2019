@@ -1,4 +1,4 @@
-package com.anothay.dictionaryvietlao;
+package com.aiy.dictionaryvietlao;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

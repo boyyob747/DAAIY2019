@@ -1,15 +1,14 @@
-package com.anothay.dictionaryvietlao;
+package com.aiy.dictionaryvietlao;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.anothay.dictionaryvietlao.model.LocalDAO;
-import com.anothay.dictionaryvietlao.model.Word;
-import com.anothay.dictionaryvietlao.model.WordDao;
+import com.aiy.dictionaryvietlao.model.LocalDAO;
+import com.aiy.dictionaryvietlao.model.Word;
+import com.aiy.dictionaryvietlao.model.WordDao;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
